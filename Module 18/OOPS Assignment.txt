@@ -1,0 +1,22 @@
+1)How to Create an Object in Java?
+Use the new keyword to allocate memory and create an object. Example:
+ClassName obj = new ClassName();
+
+2)What is the use of a new keyword in Java?
+The new keyword allocates memory for objects in the heap and initializes them. It’s used to instantiate classes.
+
+3)What are the different types of variables in Java?
+Local variables are declared inside methods or blocks.
+Instance variables are declared in a class but outside any method.
+Static variables are shared among all instances of a class.
+
+4)What is the difference between Instance variable and Local variables?
+Instance variables belong to objects and are stored in heap memory. Local variables are confined to methods or blocks and stored in stack memory.
+
+5)In which area memory is allocated for instance variable and local variable?
+Instance variables are stored in heap memory, while local variables are stored in stack memory.
+
+6)What is method overloading?
+Defining multiple methods with the same name but differing in parameter type, number, or order. Example:
+void show(int x) { }
+void show(String y) { }
