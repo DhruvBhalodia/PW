@@ -1,0 +1,22 @@
+1) What is statically typed and Dynamically typed Programming Language ?
+A statically typed programming language requires type declarations at compile time (e.g. Java) while a dynamically typed language determines variable types at runtime (e.g. Python).
+
+2) What is the variable in Java ?
+A variable in Java is a named memory location used to store a value of a specified data type.
+
+3) How To Assign a Value To Variable ?
+To assign a value to a variable in Java, use the assignment operator (=), Ex., int num = 10.
+
+4) What are Primitive Data types in Java ?
+Primitive data types in Java include byte, short, int, long, float, double, char, and boolean.
+
+5) What are the Identifiers in Java ?
+Identifiers in Java are names given to variables, methods, classes, or other elements to uniquely identify them.
+
+6) List the Operators in Java ?
+Java operators include arithmetic (+, -, *, /, %), relational (==, !=, <, >, <=, >=), logical (&&, ||, !), bitwise (&, |, ^), and assignment (=).
+
+7) Explain about Increment and Decrement operators and give an examples
+Increment (++) and decrement (--) operators modify a variable's value by 1.
+Post-increment: Ex. int x = 5; x++; (x becomes 6 after the statement).
+Pre-decrement: Ex. int y = 5; --y; (y becomes 4 before the statement completes).
