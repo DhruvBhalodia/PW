@@ -1,0 +1,41 @@
+1. What is a Constructor?  
+   A constructor is a special method used to initialize an object. It has the same name as the class and no return type.
+
+2. What is Constructor Chaining?  
+   Constructor chaining is the process of calling one constructor from another within the same class or using `super()` to call a parent class constructor.
+
+3. Can we call a subclass constructor from a superclass constructor?  
+   No, a superclass constructor cannot directly call a subclass constructor. However, a subclass constructor can call a superclass constructor using `super()`.
+
+4. What happens if you keep a return type for a constructor?  
+   The code compiles, but the method is treated as a normal method, not a constructor.
+
+5. What is a No-arg constructor?  
+   A no-arg constructor is a constructor that does not accept any parameters.  
+   Example:  
+   class Example {
+       public Example() {
+           System.out.println("No-arg constructor called.");
+       }
+   }
+   
+
+6. How is a No-argument constructor different from the Default Constructor?  
+   - No-arg Constructor: Explicitly defined by the programmer with no parameters.  
+   - Default Constructor: Provided automatically by Java if no constructor is defined in the class.
+
+7. When do we need Constructor Overloading?  
+   Constructor overloading is used when multiple ways of initializing objects are needed, e.g., initializing with different sets of parameters.
+
+8. What is a Default Constructor? Explain with an Example.  
+   A default constructor is a no-arg constructor provided by the compiler if no constructors are defined.  
+   Example: 
+   class Example {
+
+   }
+   public class Main {
+       public static void main(String[] args) {
+           Example obj = new Example();
+       }
+   }
+   

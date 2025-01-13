@@ -1,0 +1,42 @@
+1. Why do we need the static keyword in Java?  
+   The static keyword allows members (methods or variables) to belong to the class rather than instances, making them accessible without creating objects.  
+   Example:  
+   class Example {
+       static int counter = 0;
+       static void showCounter() {
+           System.out.println("Counter: " + counter);
+       }
+   }
+   public class Main {
+       public static void main(String[] args) {
+           Example.counter = 10;
+           Example.showCounter(); // Output: Counter: 10
+       }
+   }
+   
+
+2. What is class loading, and how does a Java program execute?  
+   Class loading is the process of loading the .class file into the JVM. The program executes as follows:  
+   1. ClassLoader loads the class.
+   2. Bytecode is verified by the Bytecode Verifier.
+   3. JVM interprets and executes bytecode.
+
+3. Can we mark a local variable as static?  
+   No, local variables cannot be static because static variables belong to the class, while local variables exist only during the method's execution.
+
+4. Why is the static block executed before the main method in Java?  
+   Static blocks are executed when the class is loaded, before any method (including main) is called, to initialize static data.
+
+5. Why is a static method also called a class method?  
+   Static methods are called "class methods" because they belong to the class, not to any specific instance.
+
+6. What is the use of static blocks in Java?  
+   Static blocks are used for initializing static variables or performing tasks that need to be done once when the class is loaded.
+
+7. Difference between static and instance variables:  
+   - Static Variable: Belongs to the class, shared by all objects.  
+   - Instance Variable: Belongs to the object, each instance has its own copy.
+
+8. Difference between static and non-static members:  
+   - Static Members: Associated with the class, accessed without an object.  
+   - Non-static Members: Associated with objects, require an object to be accessed.  

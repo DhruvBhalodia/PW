@@ -1,0 +1,38 @@
+1. Explain different types of errors in Java: 
+   - Syntax Errors:Compilation errors due to incorrect syntax.  
+   - Runtime Errors:Errors that occur during execution, e.g., division by zero.  
+   - Logical Errors:Flaws in the logic of the program, producing incorrect output.  
+
+2. What is an Exception in Java? 
+   An exception is an event that disrupts the normal flow of a program. It is an object representing an error condition that occurs during runtime.
+
+3. How can you handle exceptions in Java? Explain with an example. 
+   Exceptions are handled using try, catch, finally, and throw blocks.  
+   Example: 
+   public class Main {
+       public static void main(String[] args) {
+           try {
+               int result = 10 / 0; // Risky code
+           } catch (ArithmeticException e) {
+               System.out.println("Cannot divide by zero!");
+           } finally {
+               System.out.println("Execution complete.");
+           }
+       }
+   }
+   
+
+4. Why do we need exception handling in Java? 
+   Exception handling ensures the program does not terminate abruptly, provides meaningful error messages, and allows graceful recovery from errors.
+
+5. What is the difference between exception and error in Java? 
+   - Exception: represents runtime issues like invalid input.  
+   - Error: represents serious problems like memory leaks.
+
+6. Name the different types of exceptions in Java: 
+   - Checked Exceptions:Must be declared or handled (e.g., IOException).  
+   - Unchecked Exceptions:Occur at runtime (e.g., NullPointerException).  
+   - Errors:Serious issues (e.g., OutOfMemoryError).
+
+7. Can we just use try instead of finally and catch blocks? 
+   No, try must be accompanied by at least one catch block or a finally block.

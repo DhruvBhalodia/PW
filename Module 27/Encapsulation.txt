@@ -1,0 +1,68 @@
+1. What is Encapsulation in Java? Why is it called Data Hiding?  
+   Encapsulation is the process of wrapping data (fields) and methods into a single unit (class) and restricting direct access to data using access modifiers (like private). It's called "data hiding" because it hides the internal details and provides controlled access via methods.
+
+2. What are the important features of Encapsulation?  
+   - Restricts direct access to fields using access modifiers.  
+   - Protects data integrity.  
+   - Improves code modularity and maintainability.  
+   - Allows controlled access using getter and setter methods.
+
+3. What are getter and setter methods in Java? Explain with an example.  
+   Getter and setter methods provide controlled access to private fields.  
+   Example:  
+   class Person {
+       private String name;
+       public String getName() {
+           return name; // Getter
+       }
+       public void setName(String name) {
+           this.name = name; // Setter
+       }
+   }
+   public class Main {
+       public static void main(String[] args) {
+           Person person = new Person();
+           person.setName("John"); // Setting value
+           System.out.println(person.getName()); // Getting value
+       }
+   }
+
+4. What is the use of this keyword? Explain with an example.  
+   The this keyword refers to the current instance of the class. It is used to resolve naming conflicts, pass the current object, or invoke other constructors.  
+   Example:  
+   class Example {
+       private String name;
+       public Example(String name) {
+           this.name = name; // Resolving naming conflict
+       }
+       public void showName() {
+           System.out.println(this.name);
+       }
+   }
+
+5. What is the advantage of Encapsulation?  
+   - Enhances security by hiding implementation details.  
+   - Allows flexibility by modifying internal details without changing external code.  
+   - Increases maintainability and reusability.
+
+6. How to achieve Encapsulation in Java? Give an example.  
+   Steps:  
+   - Declare fields as private.  
+   - Provide public getter and setter methods for access.  
+   Example:  
+   class Student {
+       private int rollNo;
+       public int getRollNo() {
+           return rollNo;
+       }
+       public void setRollNo(int rollNo) {
+           this.rollNo = rollNo;
+       }
+   }
+   public class Main {
+       public static void main(String[] args) {
+           Student student = new Student();
+           student.setRollNo(101);
+           System.out.println("Roll No: " + student.getRollNo());
+       }
+   }  
