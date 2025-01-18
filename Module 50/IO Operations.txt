@@ -1,0 +1,48 @@
+1. What is Input and Output Stream in Java?  
+   Input and Output streams are used to read and write data in Java. InputStream reads data from a source, and OutputStream writes data to a destination.
+
+2. What are the methods of OutputStream?  
+   - write(int b): Writes a single byte.  
+   - write(byte[] b): Writes an array of bytes.  
+   - flush(): Forces any buffered output to be written.  
+   - close(): Closes the stream and releases resources.
+
+3. What is serialization in Java?  
+   Serialization is the process of converting an object into a byte stream for storage or transmission.
+
+4. What is the Serializable interface in Java?  
+   The Serializable interface is a marker interface (no methods) used to enable serialization for a class.
+
+5. What is deserialization in Java?  
+   Deserialization is the process of converting a byte stream back into an object.
+
+6. How is serialization achieved in Java?  
+   By implementing the Serializable interface and using ObjectOutputStream to write the object.  
+   Example:  
+   ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("file.ser"));
+   out.writeObject(obj);
+   
+
+7. How is deserialization achieved in Java?  
+   By using ObjectInputStream to read the serialized object.  
+   Example:  
+   ObjectInputStream in = new ObjectInputStream(new FileInputStream("file.ser"));
+   Object obj = in.readObject();
+   
+
+8. How can you avoid certain member variables of a class from getting serialized?  
+   Use the transient keyword to exclude specific fields from serialization.  
+   Example:  
+   private transient int sensitiveData;
+   
+
+9. What classes are available in the Java IO File Classes API?  
+   - File: Represents file and directory paths.  
+   - FileReader/FileWriter: For reading/writing character files.  
+   - FileInputStream/FileOutputStream: For reading/writing byte files.  
+   - BufferedReader/BufferedWriter: For efficient character file handling.
+
+10. What is the difference between Externalizable and Serializable interface?  
+    - Serializable: Automatically serializes all non-transient fields; less control.  
+    - Externalizable: Requires implementing writeExternal() and readExternal() methods for custom serialization.  
+    - Externalizable offers more flexibility but requires more effort.

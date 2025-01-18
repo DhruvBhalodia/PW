@@ -1,0 +1,57 @@
+1. What is a Map in Java?  
+   A Map in Java is a collection that stores key-value pairs, where each key is unique. Commonly used to associate and retrieve values based on keys.
+
+2. What are the commonly used implementations of Map in Java?  
+   - HashMap: Unordered, allows null keys and values.  
+   - TreeMap: Sorted by natural order or a comparator.  
+   - LinkedHashMap: Maintains insertion order.  
+   - ConcurrentHashMap: Thread-safe for concurrent use.
+
+3. What is the difference between HashMap and TreeMap?  
+   - HashMap: Unordered, faster for operations, allows null keys.  
+   - TreeMap: Sorted order, slower due to sorting, does not allow null keys.
+
+4. How do you check if a key exists in a Map in Java?  
+   Use the containsKey() method:  
+   map.containsKey("key");
+   
+
+5. What are Generics in Java?  
+   Generics enable type-safe operations by allowing you to define classes, methods, or interfaces with type parameters.
+
+6. What are the benefits of using Generics in Java?  
+   - Provides type safety.  
+   - Eliminates the need for type casting.  
+   - Detects errors at compile-time.  
+   - Improves code reusability.
+
+7. What is a Generic Class in Java?  
+   A class that operates on a specified type parameter.  
+   Example:  
+   class Box<T> {
+       private T value;
+       public void set(T value) { this.value = value; }
+       public T get() { return value; }
+   }
+   
+
+8. What is a Type Parameter in Java Generics?  
+   A placeholder for a type, specified when creating or using a generic class or method. Example: <T> in class Box<T>.
+
+9. What is a Generic Method in Java?  
+   A method that operates on a specified type parameter, defined with <T> before the return type.  
+   Example:  
+   public static <T> void printArray(T[] array) {
+       for (T element : array) {
+           System.out.println(element);
+       }
+   }
+   
+
+10. What is the difference between ArrayList and ArrayList<T>?  
+   - ArrayList: Non-generic, stores any type (raw type).  
+   - ArrayList<T>: Generic, ensures type safety and avoids runtime ClassCastException.  
+   Example:  
+   ArrayList list = new ArrayList(); 
+   ArrayList<String> list = new ArrayList<>();
+   

@@ -1,0 +1,50 @@
+1. Program to display current date and time in Java  
+   public class CurrentDateTime {
+       public static void main(String[] args) {
+           LocalDateTime now = LocalDateTime.now();
+           System.out.println("Current Date and Time: " + now);
+       }
+   }
+   
+
+2. Program to convert a date to a string in the format MM/dd/yyyy  
+   public class DateToString {
+       public static void main(String[] args) {
+           LocalDate date = LocalDate.now();
+           DateTimeFormatter formatter = DateTimeFormatter.ofPattern("MM/dd/yyyy");
+           String formattedDate = date.format(formatter);
+           System.out.println("Formatted Date: " + formattedDate);
+       }
+   }
+   
+
+3. What is the difference between collections and streams?  
+   - Collections: Stores data in memory, operates on the entire dataset.  
+   - Streams: Processes data lazily, operates on data as it flows (one element at a time).  
+   Example:  
+   List<Integer> list = Arrays.asList(1, 2, 3, 4);
+   list.add(5); 
+   list.stream().filter(x -> x % 2 == 0).forEach(System.out::println);
+   
+
+4. What are enums in Java? Explain with an example.  
+   An enum is a special class that represents a group of constants.  
+   Example:  
+   enum Day {
+       MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY;
+   }
+
+   public class EnumExample {
+       public static void main(String[] args) {
+           Day today = Day.MONDAY;
+           System.out.println("Today is: " + today);
+       }
+   }
+   
+
+5. What are in-built annotations in Java?  
+   - @Override: Indicates a method is overridden.  
+   - @Deprecated: Marks a method/class as deprecated.  
+   - @SuppressWarnings: Suppresses compiler warnings.  
+   - @FunctionalInterface: Marks an interface as a functional interface.  
+   - @SafeVarargs: Suppresses warnings for varargs.

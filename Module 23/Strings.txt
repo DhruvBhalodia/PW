@@ -1,0 +1,67 @@
+1. Write a simple String program to take input from user  
+   public class UserInput {
+       public static void main(String[] args) {
+           Scanner scanner = new Scanner(System.in);
+           System.out.print("Enter a string: ");
+           String input = scanner.nextLine();
+           System.out.println("You entered: " + input);
+       }
+   }
+   
+
+2. How do you concatenate two strings in Java? Give an example.  
+   Use the + operator or concat() method.  
+   Example:  
+   String s1 = "Hello";
+   String s2 = " World";
+   String result = s1 + s2; 
+   System.out.println(result);
+   
+
+3. How do you find the length of a string in Java? Explain with an example.  
+   Use the length() method.  
+   Example:  
+   String str = "Hello";
+   System.out.println("Length: " + str.length());
+   
+
+4. How do you compare two strings in Java? Give an Example.  
+   Use equals() or equalsIgnoreCase().  
+   Example:  
+   String s1 = "Hello";
+   String s2 = "hello";
+   System.out.println(s1.equals(s2)); 
+   System.out.println(s1.equalsIgnoreCase(s2)); 
+   
+
+5. Write a program to find the length of the string "refrigerator".  
+   public class StringLength {
+       public static void main(String[] args) {
+           String str = "refrigerator";
+           System.out.println("Length: " + str.length());
+       }
+   }
+   
+
+6. Write a program to check if the letter 'e' is present in the word 'Umbrella'.  
+   public class CheckLetter {
+       public static void main(String[] args) {
+           String word = "Umbrella";
+           if (word.contains("e")) {
+               System.out.println("'e' is present");
+           } else {
+               System.out.println("'e' is not present");
+           }
+       }
+   }
+   
+
+7. Write a program to delete all consonants from the string "Hello, have a good day".  
+   public class RemoveConsonants {
+       public static void main(String[] args) {
+           String str = "Hello, have a good day";
+           String result = str.replaceAll("[^aeiouAEIOU\\s]", "");
+           System.out.println("String without consonants: " + result);
+       }
+   }
+   
